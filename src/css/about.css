@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.background {
+  position: relative;
+  width: 1150px;
+  height: 298px;
+  padding-left: 80px;
+  padding-top: 83px;
+  padding-bottom: 83px;
+  background-image: url(../img/image\ 70.jpg);
+  opacity: 0.8;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(12, 12, 12, 0.8); /* Затемнення */
+  z-index: 2;
+  box-sizing: border-box; /* Коригування розміру */
+}
+
+.about-title {
+  position: relative;
+  width: 690px;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 0.91667;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  z-index: 3; /* Текст поверх затемнення */
+}
+
+.title-part {
+  color: rgba(251, 251, 251, 0.5);
+}
